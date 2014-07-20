@@ -1,6 +1,5 @@
 <Alloy>
-	<Window id="index">
-		<Label id="label">Hello, Aniket</Label>
-		
+	<Window class="container" id="index">
+		<Require src="feed" id="feed"></Require>
 	</Window>
 </Alloy>
