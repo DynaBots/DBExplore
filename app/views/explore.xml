@@ -1,4 +1,7 @@
 <Alloy>
 	<Window id="explore">
+		<Require src="giza" id="giza"></Require>
+		<Require src="uw" id="uw"></Require>
+		<Require src="rock" id="rock"></Require>
 	</Window>
 </Alloy>

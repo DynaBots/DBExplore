@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container" id="articles">
+		<Require src="feed" id="feed"></Require>
+	</Window>
+</Alloy>

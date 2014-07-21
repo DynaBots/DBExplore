@@ -1,7 +1,7 @@
-exports.init = function(){
+exports.init = function(article){
 	var videoPlayer;	
 	var myView = Titanium.UI.createView({
-		backgroundImage: 'giza.jpg',
+		backgroundImage: 'rock.jpg',
 		width: 1024,
 	   	height: 768
 	});
@@ -99,25 +99,12 @@ exports.init = function(){
 		width: 50,
 	   	height: 50,
 	   	top: '800px',
-	   	left: '100px'
+	   	right: '200px'
 	});
 	videoIcon.addEventListener("click", function() {
 		goToVideo('https://db.tt/7iWk90mv');
 	});
 	myView.add(videoIcon);
-	
-	var videoIcon2 = Titanium.UI.createView({
-		backgroundImage: 'video.png',
-		width: 50,
-	   	height: 50,
-	   	top: '700px',
-	   	left: '300px'
-	});
-	videoIcon2.addEventListener("click", function() {
-		goToVideo('https://db.tt/Q03M0cUA');
-	});
-	myView.add(videoIcon2);
-	
 	
 	//Add Text Icons here
 	var textIcon1 = Titanium.UI.createView({
@@ -125,13 +112,13 @@ exports.init = function(){
 		width: 50,
 	   	height: 50,
 	   	top: '500px',
-	   	left: '400px'
+	   	left: '700px'
 	});
 	textIcon1.addEventListener("click", function(){
 		text1.animate(animationTextEnd);
-		text1.text = "Giza";
+		text1.text = "ROCK!!";
 		text1.top = '500px';
-	   	text1.left = '400px';
+	   	text1.left = '700px';
 		//text1.visible = "true";	
 		text1.height = '100px';
 	   	text1.width = '200px';
@@ -139,34 +126,16 @@ exports.init = function(){
 	});
 	myView.add(textIcon1);
 	
-	var textIcon2 = Titanium.UI.createView({
-		backgroundImage: 'text.png',
-		width: 50,
-	   	height: 50,
-	   	top: '600px',
-	   	left: '800px'
-	});
-	textIcon2.addEventListener("click", function(){
-		text1.animate(animationTextEnd);
-		text1.text = "Hello! this is great place to be";
-		text1.top = '600px';
-	   	text1.left = '800px';
-		//text1.visible = "true";	
-		text1.height = '200px';
-	   	text1.width = '200px';
-	   	text1.animate(animationTextStart);
-	});
-	myView.add(textIcon2);
 	//end of text icons
 	
 	myView.add(text1);
 	myView.add(audioIcon1);
 	
-	$.explore.add(myView);
-	$.explore.addEventListener('pinch',function(){
-		$.explore.close();
+	$.rock.add(myView);
+	$.rock.addEventListener('pinch',function(){
+		$.rock.close();
 	});
-	$.explore.open();
+	$.rock.open();
 	//$.feed.init();
 	
 	//myView.animate(animation);
